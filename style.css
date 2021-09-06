@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+/* font-family: 'Yeseva One', cursive; */
+
+
+*{box-sizing: border-box;}
+body{min-height:100vh;margin: 0; background-image: linear-gradient(135deg,#3b0038 50%,#4d0049 0%); background-repeat: no-repeat; background-size: cover;}
+h1 {
+    text-align: center;
+    color: #fff;
+    background-color: rgb(29, 29, 29);
+    text-align:center;
+    font-family: 'Yeseva One', cursive;
+    padding: 16px 0;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+
+.calculator-body{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    /* background:linear-gradient(-45deg,#212121 50%,#292929 0%); */
+    background: linear-gradient(135deg,#333333 25%,#131313 75%);
+    border-radius: 10px;
+    position: relative;
+    /* box-shadow: 2px 2px 8px #000000,-2px -2px 8px #00000050, inset 4px 4px 4px #0f0f0f,inset -4px -4px 4px #79797950; */
+    box-shadow: 0 0 20px black, inset 0 0 8px black;
+
+}
+
+.calculator-body::after{
+    content: 'XADDY';
+    position:absolute;
+    left: 50%;
+    top:13px;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.5rem;
+    
+}
+
+input, button{outline: none;border: none;}
+
+.display input{
+    width: 90%; 
+    display: block; 
+    margin: 30px auto 20px auto;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 3px #000000,inset -3px -3px 3px #000000ad;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.inner{width: 90%; margin: auto; margin-bottom: 15px;}
+.digits{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+button{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    /* background:linear-gradient(45deg,#121212 70%,#212121 0%); */
+    background-color: rgb(197, 197, 197);
+
+    /* color: white; */
+    color: black;
+    /* box-shadow: 2px 2px 3px #000000ad,inset 0px 0px 8px #494949; */
+    box-shadow: 2px 2px 3px #000000ad,inset 0px 0px 10px #2e2e2e;
+    font-size: 22px;
+    cursor: pointer;
+    transition: All 0.3s linear;
+    text-shadow: 0 0 2px rgb(49, 49, 49);
+}
+
+button:hover{
+    /* background:linear-gradient(225deg,#121212 70%,#212121 0%);
+    box-shadow: 2px 2px 3px #00000000,inset 0px 0px 8px #494949; */
+    transform: rotate(360deg);
+}
